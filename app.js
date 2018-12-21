@@ -95,7 +95,7 @@ app.use(passport.session());
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000']
+  origin: ['http://localhost:3000', 'http://audiofy.surge.sh', '*']
 }));
 // cors is the security feature, thus it will accept requests as long as they come from localhost:3000 which is the route that the react app will have.
 
